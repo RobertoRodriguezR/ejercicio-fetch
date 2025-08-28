@@ -31,4 +31,6 @@ fetch(DATA_URL)
     //console.log(data.students);
     showData(data.students);
   })
-
+  .catch(error => {
+    console.error("Se ha detectado el siguiente error: " + error);
+  })
